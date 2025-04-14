@@ -12,6 +12,7 @@ import Notification from "../../components/Notification/Notification";
 import Loader from "../../components/Loader/Loader";
 import Error from "../../components/Error/Error";
 import ContactList from "../../components/ContactList/ContactList";
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 export default function ContactsPage() {
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ export default function ContactsPage() {
 
   return (
     <>
+      <PageTitle>Your contacts</PageTitle>
       <ContactForm />
       <SearchBox />
       <div>{contacts.length === 0 && <Notification />}</div>
