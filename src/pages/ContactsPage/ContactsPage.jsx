@@ -3,7 +3,7 @@ import {
   selectContacts,
   selectIsLoading,
   selectIsError,
-} from "../../redux/contactsSlice";
+} from "../../redux/contacts/slice";
 import { useEffect } from "react";
 import { fetchContacts } from "../../redux/contactsOps";
 import ContactForm from "../../components/ContactForm/ContactForm";
