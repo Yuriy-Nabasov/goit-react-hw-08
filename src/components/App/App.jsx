@@ -130,7 +130,7 @@ export default function App() {
             </Suspense>
           </Layout>
         )}
-        ;{/* <Analytics /> */}
+        {/* <Analytics /> */}
       </Container>
     </Section>
   );

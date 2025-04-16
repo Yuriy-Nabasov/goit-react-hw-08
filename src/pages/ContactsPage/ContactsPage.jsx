@@ -5,7 +5,7 @@ import {
   selectIsError,
 } from "../../redux/contacts/slice";
 import { useEffect } from "react";
-import { fetchContacts } from "../../redux/contactsOps";
+import { fetchContacts } from "../../redux/contacts/operations";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import SearchBox from "../../components/SearchBox/SearchBox";
 import Notification from "../../components/Notification/Notification";
