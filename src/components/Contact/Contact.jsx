@@ -15,14 +15,16 @@ export default function Contact({ data: { id, name, number } }) {
       <div>
         <div className={css.wrapper}>
           <BsFillPersonFill />
-          <p className={css.text}>{name}</p>
+          <p className={css.name}>{name}</p>
         </div>
         <div className={css.wrapper}>
           <BsFillTelephoneFill />
           <p className={css.text}>{number}</p>
         </div>
       </div>
-      <button onClick={handleDelete}>Delete</button>
+      <button className={css.button} onClick={handleDelete}>
+        Delete
+      </button>
     </div>
   );
 }

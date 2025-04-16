@@ -1,14 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 
-// import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react";
 
 import Section from "../Section/Section";
 import Container from "../Container/Container";
 import Heading from "../Heading/Heading";
-// import ContactForm from "../ContactForm/ContactForm";
-// import SearchBox from "../SearchBox/SearchBox";
-// import ContactList from "../ContactList/ContactList";
-// import Notification from "../Notification/Notification";
 
 import { selectIsRefreshing } from "../../redux/auth/selectors";
 import { lazy, Suspense } from "react";
@@ -30,45 +26,6 @@ const ContactsPage = lazy(() =>
 );
 
 import { useEffect } from "react";
-// import { fetchContacts } from "../../redux/contactsOps";
-// import {
-//   selectContacts,
-//   selectIsLoading,
-//   selectIsError,
-// } from "../../redux/contactsSlice";
-// import Loader from "../Loader/Loader";
-// import Error from "../Error/Error";
-
-// export default function App() {
-//   const dispatch = useDispatch();
-
-//   const contacts = useSelector(selectContacts);
-//   const isLoading = useSelector(selectIsLoading);
-//   const isError = useSelector(selectIsError);
-
-//   useEffect(() => {
-//     dispatch(fetchContacts());
-//   }, [dispatch]);
-
-//   return (
-//     <Section>
-//       <Container>
-//         <Heading
-//           title="Phonebook release with registration and login"
-//           bottom
-//           tag={`h1`}
-//         />
-//         <ContactForm />
-//         <SearchBox />
-//         <div>{contacts.length === 0 && <Notification />}</div>
-//         {isLoading && <Loader>Loading message</Loader>}
-//         {isError && <Error>Error message</Error>}
-//         {contacts.length > 0 && <ContactList />}
-//         <Analytics />
-//       </Container>
-//     </Section>
-//   );
-// }
 
 export default function App() {
   const dispatch = useDispatch();
@@ -110,13 +67,6 @@ export default function App() {
                     />
                   }
                 />
-                {/* <RestrictedRoute
-                  component={<Route path="/login" element={<LoginPage />} />}
-                  redirectTo="/contacts"
-                /> */}
-
-                {/* <Route path="/contacts" element={<ContactsPage />} />
-                </Routes> */}
                 <Route
                   path="/contacts"
                   element={
@@ -130,7 +80,7 @@ export default function App() {
             </Suspense>
           </Layout>
         )}
-        {/* <Analytics /> */}
+        <Analytics />
       </Container>
     </Section>
   );

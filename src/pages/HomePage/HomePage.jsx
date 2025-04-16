@@ -4,30 +4,20 @@ export default function HomePage() {
   return (
     <div>
       <PageTitle>
-        Contact manager welcome page{" "}
+        Welcome to your personal contact organizer!{" "}
         <span role="img" aria-label="Greeting icon">
-          💁‍♀️
+          📝
         </span>
       </PageTitle>
+      <h2>Here you can easily manage your contacts:</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-        asperiores eius nobis saepe quis voluptatibus facere expedita tempora,
-        hic similique natus minima fugit doloribus molestiae dolorum sed debitis
-        tempore consectetur repellat, accusantium aspernatur incidunt
-        doloremque. Quod doloribus beatae, molestiae voluptatibus, numquam
-        recusandae accusamus voluptatem aliquam, sed vero consectetur esse
-        harum?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum et
-        illo non vel rerum odit, maxime, vitae dolorem molestiae error
-        cupiditate! Quasi eaque est provident voluptates adipisci? Cumque
-        quisquam laboriosam ullam, inventore ipsa ducimus quaerat dolorum natus
-        quasi amet ab earum vero, laborum cum quibusdam qui? Illo ab facere a
-        dolore, labore quisquam modi voluptatum esse nisi accusantium architecto
-        qui veritatis molestiae doloribus quas placeat, suscipit asperiores
-        fugiat quam sint perspiciatis ducimus! Officiis quam vel inventore fuga
-        dolorum, voluptatibus possimus.
+        📞 Keep all your important contacts in one place. <br />
+        🔍 Search among existing contacts by name and phone number. <br />
+        ✏️ Edit contact information at any time, adding new data or updating old
+        ones. <br />
+        <br />
+        We strive to make your communication closer and more convenient. <br />
+        Have a nice day and productive use!
       </p>
     </div>
   );
