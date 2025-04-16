@@ -5,7 +5,7 @@ import {
   deleteContact,
 } from "./contacts/operations";
 // import { fetchContacts, addContact, deleteContact } from "./contactsOps";
-import { selectNameFilter } from "./filtersSlice";
+import { selectNameFilter } from "./OLDfiltersSlice";
 
 export const selectContacts = (state) => state.contacts.items;
 export const selectIsLoading = (state) => state.contacts.loading;
