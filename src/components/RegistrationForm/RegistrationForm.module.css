@@ -1,5 +1,15 @@
 .form {
-  width: 320px;
+  /* width: 320px; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .label {
@@ -7,6 +17,13 @@
   flex-direction: column;
   margin-bottom: 16px;
   font-weight: bold;
+}
+
+.input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .button {
